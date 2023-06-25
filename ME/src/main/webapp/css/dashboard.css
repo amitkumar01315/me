@@ -1,0 +1,103 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background: url('/css/dashboard.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: rgba(45, 151, 237, 0.31);
+}
+
+h1 {
+	text-align: center;
+}
+
+.summary {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.summary-box {
+	padding: 10px;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.summary-box h2 {
+	margin: 0;
+}
+
+.expenses {
+	margin-bottom: 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th, table td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+table th {
+	background-color: #f2f2f2;
+}
+
+.button-row {
+	display: flex;
+	justify-content: initial;
+}
+
+.button {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #fca9ef;
+	color: activeborder;
+	border: 1px solid #080808;
+	border-radius: 9px;
+	cursor: pointer;
+}
+
+form {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(8, 1fr);
+}
+
+label {
+	display: block;
+}
+
+input[type="text"], select, input[type="date"] {
+	width: 100%;
+	height: 25px;
+	box-sizing: border-box;
+	background-color: #fdffc7;
+}
+
+#formSubmit {
+	font-size: 16px;
+	background-color: #fca9ef;
+	color: activeborder;
+	border: 1px solid #080808;
+	border-radius: 9px;
+	cursor: pointer;
+	display: flex;
+	justify-content: initial;
+	margin-top: 10px;
+	height: 35px;
+}
+
+#loginButtonDiv {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
